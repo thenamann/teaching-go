@@ -14,6 +14,10 @@ func main() {
 
 	naman := Person{"naman", 23, "naman@gmail.com", true, "cricket"}
 	naman.GetStatus()
+
+	s := make([]int, 5)
+
+	fmt.Println(s[1])
 }
 
 // GetStatus is initialised with capital letter so it can exported.
@@ -22,4 +26,3 @@ func (p1 Person) GetStatus() {
 	p1.Age = 25
 	fmt.Println(p1.Age)
 }
-
